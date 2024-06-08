@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/cinnabac/Documents/coding/httpServer'
+let g:netrw_dirhist_3='/home/cinnabac/Documents/coding/portfolio-website'
+let g:netrw_dirhist_2='/home/cinnabac/Documents/latex/.archive/MATH_146/A3'
+let g:netrw_dirhist_1='/home/cinnabac'
