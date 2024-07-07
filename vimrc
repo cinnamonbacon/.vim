@@ -7,7 +7,7 @@ filetype plugin indent on
 :set expandtab
 
 " Setting relative line numbers
-:set relativenumber
+:set number relativenumber
 
 " Setting text that appears on every line at end of file to ‖
 :set fillchars=eob:‖
