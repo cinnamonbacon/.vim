@@ -1,5 +1,11 @@
-syntax on
+set nocompatible
+syntax enable
 filetype plugin indent on
+    
+" tab completion for files reccursively
+set path+=**
+
+set fdc=1
 
 " Setting tab width
 :set tabstop=4
@@ -9,7 +15,7 @@ filetype plugin indent on
 " Setting relative line numbers
 :set number relativenumber
 
-" Setting text that appears on every line at end of file to ‖
+" setting text that appears on every line at end of file to ‖
 :set fillchars=eob:‖
 
 " Sets mapleader to space
@@ -17,9 +23,15 @@ let mapleader = " "
 
 " remaps sequence to exit file to dir
 :noremap <Leader>pv :Ex
+:noremap <Leader>d "_d
+:noremap <Leader>p "_dP
 
 :noremap <Leader>ci i#include <stdio.h>\n<esc>
 :noremap <Leader>cm iint main(){<tab>}<esc>k
+
+" :set foldmethod=syntax
+
+:noremap <leader>beg obegin(equation){<cr><Tab><cr>}<esc>k$a
 
 " plug.vim
 call plug#begin()
@@ -32,9 +44,6 @@ Plug 'aclements/latexrun'
 " vimtex for running latex from vim
 Plug 'lervag/vimtex'
 
-" code completion
-Plug 'neoclide/coc.nvim'
-
 call plug#end()
 
 "" vimtex
@@ -43,10 +52,6 @@ call plug#end()
 " Note that most plugin managers will do this automatically.
 filetype plugin indent on
 
-" This enables Vim's and neovim's syntax-related features. Without this, some
-" VimTeX features will not work (see ":help vimtex-requirements" for more
-" info).
-syntax enable
 
 " Viewer options: One may configure the viewer either by specifying a built-in
 " viewer method:
@@ -66,19 +71,3 @@ let g:vimtex_view_method = 'zathura'
 " Most VimTeX mappings rely on localleader and this can be changed with the
 " following line. The default is usually fine and is the symbol "\".
 let maplocalleader = ","
-
-
-"" Coc
-
-"suggest.noselect": true
-
-" use <tab> to trigger completion and navigate to the next complete item
-function! CheckBackspace() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-inoremap <silent><expr> <Tab>
-      \ coc#pum#visible() ? coc#pum#next(1) :
-      \ CheckBackspace() ? "\<Tab>" :
-      \ coc#refresh()
