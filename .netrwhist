@@ -1,12 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/cinnabac/.cache/vim/swap'
+let g:netrw_dirhist_1='/home/cinnabac/.cache/vim'
+let g:netrw_dirhist_0='/home/cinnabac/.config/xmonad/xmonad'
+let g:netrw_dirhist_9='/home/cinnabac/.vim'
 let g:netrw_dirhist_8='/home/cinnabac/Downloads'
 let g:netrw_dirhist_7='/home/cinnabac'
 let g:netrw_dirhist_6='/home/cinnabac/snap/obsidian'
 let g:netrw_dirhist_5='/home/cinnabac/snap'
 let g:netrw_dirhist_4='/home/cinnabac'
 let g:netrw_dirhist_3='/home/cinnabac/Documents/coding/Euchre-game/euchreGame'
-let g:netrw_dirhist_2='/home/cinnabac/.vim'
-let g:netrw_dirhist_1='/home/cinnabac'
-let g:netrw_dirhist_0='/home/cinnabac/.vim'
-let g:netrw_dirhist_9='/home/cinnabac/.vim/plugged'

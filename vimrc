@@ -16,8 +16,7 @@ set fdc=1
 :set number relativenumber
 
 " setting text that appears on every line at end of file to ‖
-:set fillchars=eob:‖
-
+" :set fillchars="|"
 " Sets mapleader to space
 let mapleader = " "
 
@@ -32,6 +31,7 @@ let mapleader = " "
 " :set foldmethod=syntax
 
 :noremap <leader>beg obegin(equation){<cr><Tab><cr>}<esc>k$a
+:noremap <leader>lass :r ~/.vim/snip/latexAssignment<cr>gg/?/g<cr>
 
 " plug.vim
 call plug#begin()

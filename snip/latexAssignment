@@ -1,0 +1,27 @@
+\documentclass[a4paper]{article}
+
+\usepackage{amsmath,amsfonts}
+\usepackage{tikz}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{8.7in}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\title{?}
+\author{Simon Bakan}
+
+
+\begin{document}
+    \maketitle
+    \begin{enumerate}
+        \item[?.]
+
+    \end{enumerate}
+\end{document}
